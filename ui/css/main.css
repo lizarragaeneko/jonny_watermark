@@ -1,0 +1,46 @@
+@import url('https://fonts.cdnfonts.com/css/pricedown');
+html, body{
+overflow:hidden;
+user-select:none;
+}
+#watermark{
+}
+#watermark #toptext{
+ position:fixed;
+   transform:translate(-50%,-50%);
+   left:85vh;
+   top:2.25vh;
+}
+#watermark #toptext h1{
+ font-family: 'Pricedown Bl', sans-serif;
+    position:fixed;
+   transform:translate(-50%,-50%);
+   font-size: 5vh;
+   left:22.5vh;
+}
+#watermark #toptext #border{
+     background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite alternate;
+    background-size: 400% 100%;  
+}
+#best{
+ top: 10vh;
+   position:fixed;
+   left:107.5vh;
+    font-family: 'Pricedown Bl', sans-serif;
+   font-size: 3.5vh;
+   transform: translate(-50%,-50%);
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
